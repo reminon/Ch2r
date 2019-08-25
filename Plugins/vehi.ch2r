@@ -1,0 +1,277 @@
+<plugin>
+  <tag>vehi</tag>
+
+  <tab>
+    <name>Bitmasks</name>
+    <listSize>0</listSize>
+
+    <value>
+      <type>bitmask32</type>
+      <offset>0xBE</offset>
+      <name>Boost</name>
+
+      <bitmask>
+        <bit>20</bit>
+        <name>Has boost</name>
+      </bitmask>
+    </value>
+    <value>
+      <type>bitmask32</type>
+      <offset>0x1ee</offset>
+      <name>Physics</name>
+
+      <bitmask>
+        <bit>14</bit>
+        <name>Flying</name>
+      </bitmask>
+      <bitmask>
+        <bit>15</bit>
+        <name>F-in crazy hog</name>
+      </bitmask>
+      <bitmask>
+        <bit>16</bit>
+        <name>Weird hog/banshee physics</name>
+      </bitmask>
+      <bitmask>
+        <bit>28</bit>
+        <name>Is a vehicle</name>
+      </bitmask>
+      <bitmask>
+        <bit>31</bit>
+        <name>Handbrake</name>
+      </bitmask>
+    </value>
+</tab>
+<tab>
+    <name>Values</name>
+    <listSize>15</listSize>
+ <value>
+   <type>float</type>
+   <offset>0x1F8</offset>
+   <name>Reverse Speed?</name>
+   <desc>all of these were tested with a ghost except the human values</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x1FC</offset>
+   <name>Reverse Speed Accel?</name>
+   <desc>again</desc>
+  </value>  
+  <value>
+   <type>float</type>
+   <offset>0x2C0</offset>
+   <name>Traction</name>
+   <desc>halo 2 traction, lower the float the more</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0xF4</offset>
+   <name>Crazyness</name>
+   <desc>halo 2 high value makes warthog go crazy</desc>
+  </value>  
+  <value>
+   <type>float</type>
+   <offset>0x2B0</offset>
+   <name>Human Vehi Handling</name>
+   <desc>Halo 2 makes warthog very sensitive</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x2B4</offset>
+   <name>Human Vehi Height From Ground</name>
+   <desc>Halo 2 warthog from ground</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x2BC</offset>
+   <name>Human Vehi Top Speed</name>
+   <desc>halo 2 high value makes warthog go crazy</desc>
+  </value>  
+  <value>
+   <type>float</type>
+   <offset>0x1D0</offset>
+   <name>Covie Vehi Boost Speed?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x1D4</offset>
+   <name>Covie Vehi Boost Accel?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x1DC</offset>
+   <name>Covie Vehi Boost Time</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x1E0</offset>
+   <name>Covie Vehi Max Speed?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x1F4</offset>
+   <name>Covie Vehi Speed Accel?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x200</offset>
+   <name>Covie Vehi Strafe Speed1</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x204</offset>
+   <name>Covie Vehi Strafe Speed Left</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x208</offset>
+   <name>Covie Vehi Strafe Speed Right</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x22C</offset>
+   <name>Covie Vehi Strafe Speed4</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x230</offset>
+   <name>Covie Vehi Strafe Speed5</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x234</offset>
+   <name>Covie Vehi Strafe Speed6</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x238</offset>
+   <name>Covie Vehi Strafe Speed7</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x23C</offset>
+   <name>Covie Vehi Strafe Speed8</name>
+   <desc>again</desc>
+  </value>  
+  <value>
+   <type>float</type>
+   <offset>0x2D8</offset>
+   <name>Covie Vehi Turn Angle (Flippy)</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x2DC</offset>
+   <name>Covie Vehi 2DC</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x2E4</offset>
+   <name>2E4 (Useless?)</name>
+   <desc>again</desc>
+  </value>  
+  <value>
+   <type>float</type>
+   <offset>0x2C4</offset>
+   <name>2C4</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x4</offset>
+   <name>4</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x6C</offset>
+   <name>6C</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x70</offset>
+   <name>70</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x74</offset>
+   <name>74</name>
+   <desc>again</desc>
+  </value> 
+  <value>
+   <type>float</type>
+   <offset>0x78</offset>
+   <name>78</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x7C</offset>
+   <name>7C</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x80</offset>
+   <name>80</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x240</offset>
+   <name>240 ?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x250</offset>
+   <name>250 ?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x254</offset>
+   <name>254 ?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x25C</offset>
+   <name>25C ?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x274</offset>
+   <name>274 ?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x278</offset>
+   <name>278 ?</name>
+   <desc>again</desc>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x2C4</offset>
+   <name>2C4</name>
+   <desc>again</desc>
+  </value>
+</tab>
+</plugin>

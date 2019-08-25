@@ -1,0 +1,143 @@
+<plugin>
+ <tag>proj</tag>
+<tab>
+  <name>Main</name>
+  <listSize>13</listSize>
+
+<value>
+<type>bitmask32</type>
+<offset>0xbc</offset>
+<name>Flags</name>
+   <bitmask>
+    <bit>27</bit>
+    <name>Goes through</name>
+   </bitmask>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x17</offset>
+<name>Grenade y/n</name>
+<desc>Determines whether projectile is for a weapon or a grenade (0 for weapon, 64 for grenade)</desc>
+</value>
+
+<value>
+<type>short</type>
+<offset>0xe4</offset>
+<name>Proj type</name>
+<desc>Type of projectile (0, 1, 2, 3)</desc>
+</value>
+
+<value>
+<type>short</type>
+<offset>0xc2</offset>
+<name>0xc2 Short</name>
+<desc>Unknown short</desc>
+</value>
+
+<value>
+<type>short</type>
+<offset>0xc0</offset>
+<name>0xc0 Short</name>
+<desc>Unknown short</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x4</offset>
+<name>Particle Size</name>
+<desc>Size of the particle</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xcc</offset>
+<name>Explode delay</name>
+<desc>Delay before projectile explodes</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xc4</offset>
+<name>Bounce life</name>
+<desc>Amount of time the projectile will bounce before exploding</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xd4</offset>
+<name>Bounce distance</name>
+<desc>The distance the projectile will bounce before exploding</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x164</offset>
+<name>Weight</name>
+<desc>The weight of the projectile</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xd0</offset>
+<name>Glow radius</name>
+<desc>The amount of glow of the projectile</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x16c</offset>
+<name>0x16c Float</name>
+<desc>Unknown float</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x170</offset>
+<name>Effect amount</name>
+<desc>Amount of damage the projectile does</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x178</offset>
+<name>Effect Distance</name>
+<desc>The distance from the projectile that damage is done</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x184</offset>
+<name>Min homing</name>
+<desc>Minimum distance for homing?</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x188</offset>
+<name>Max homing</name>
+<desc>Maximum distance for homing?</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xE0</offset>
+<name>Projectile life distance</name>
+<desc>The distance a projectile can travel before it "dies"</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x17c</offset>
+<name>Initial projectile speed</name>
+<desc>Speed of the projectile at spawn</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x180</offset>
+<name>Final projectile speed</name>
+<desc>Speed of projectile when it hits</desc>
+</value>
+</tab>
+</plugin>

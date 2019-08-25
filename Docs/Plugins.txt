@@ -1,0 +1,75 @@
+Creating .ch2r Plugins:
+
+.ch2r files are basically .xml, we're only using the new extension to avoid confusion with the old plugins.
+
+The original plugin system worked quite well, but it wasn't the best system ever. In recreating the plugin system I've tried to keep it as similar as possible.
+
+
+The main node for the plugin is the <plugin> node. This is the top level node, everything goes inside this one.
+
+The plugin node should have a child node <tag> to set the tag the plugin is for, this really just makes it easier when looking at the file, Ch2r doesn't actually read this node.
+
+Inside the plugin node you need to define <tab> nodes to set each tab page you want to be shown using your plugin.
+
+Here's a short example:
+
+<plugin>
+ <tag>weap</tag>
+ <tab>
+  <name>General</name>
+  <listSize>4</listSize>
+ </tab>
+</plugin>
+
+This would create a tab called "General". The <listSize> node defines how big you want the List View that will hold your values to be.
+
+
+Within the <tab> node you need to define <value> nodes for each value you want your plugin to handle.
+
+This <value> node holds nodes to define details about the value:
+
+<value>
+ <type></type>
+ <offset></offset>
+ <name></name>
+</value>
+
+
+Note: offset must always be a hex number with the "0x" hex specifier
+The only recognised <type> values at the moment are:
+
+bitmask32
+integer
+short
+reflexive
+string256
+float
+
+
+Some types have other nodes under the <value> node. Every type except for bitmask32 and reflexive need a <desc> node.
+
+Bitmask32:
+The bitmask32 type has <bitmask> childnodes. These are to set the bits you want to change. Here's an example:
+
+<value>
+ <type>bitmask32</type>
+ <offset>0x20</offset>
+ <name>Example Bitmask</name>
+
+ <bitmask>
+  <bit>1</bit>
+  <name>Bit 1</name>
+ </bitmask>
+</value>
+
+
+Reflexive:
+This is the only other type that has special elements. A reflexive needs to contain the nodes: <size>, <listSize>, <indexBy>, and <item>
+The <size> node sets the size of the data the reflexive points to.
+The <listSize> node again sets the size of the list box.
+The <indexBy> node allows you to give the name of a string256 <item> node to use instead of 0,1,2,3,etc.
+
+Inside a reflexive the <item> node replaces the usual <value> node, but works in just the same way. The offset in the <item> node should be the offset from the start of the reflexive data, like the previous plugin format.
+
+!Important!
+Nested reflexives are currently not supported!

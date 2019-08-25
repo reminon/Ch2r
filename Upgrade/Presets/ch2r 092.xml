@@ -1,0 +1,32 @@
+<preset>
+  <file>
+    <filename>H:\Projects\Ch2r\Source\bin\Release\BitmControl.dll</filename>
+    <target>Current Dir</target>
+    <action>0</action>
+  </file>
+  <file>
+    <filename>H:\Projects\Ch2r\Source\bin\Release\Halo2.dll</filename>
+    <target>Current Dir</target>
+    <action>0</action>
+  </file>
+  <file>
+    <filename>H:\Projects\Ch2r\Source\bin\Release\matgmmLib.dll</filename>
+    <target>Current Dir</target>
+    <action>0</action>
+  </file>
+  <file>
+    <filename>H:\Projects\Ch2r\Source\bin\Release\ToolBarControl.dll</filename>
+    <target>Current Dir</target>
+    <action>0</action>
+  </file>
+  <file>
+    <filename>H:\Projects\Ch2r\Source\bin\Release\XPExplorerBar.dll</filename>
+    <target>Current Dir</target>
+    <action>0</action>
+  </file>
+  <file>
+    <filename>H:\Projects\Ch2r\Source\bin\Release\Ch2r.exe</filename>
+    <target>Current Dir</target>
+    <action>2</action>
+  </file>
+</preset>

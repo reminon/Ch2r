@@ -1,0 +1,69 @@
+<plugin>
+ <tag>jpt!</tag>
+<tab>
+  <name>Main</name>
+  <listSize>10</listSize>
+<value>
+<type>short</type>
+<offset>0x12</offset>
+<name>Type</name>
+<desc>0 = Other, 1 = Falling, 2 = Non-plasma, 3 = Explosion3, 4 = Explosion1, 5 = Unknown, 6 = Melee, 7 = Flaming, 8 = Explosion2, 9 = Vehicle Collision, 10 = Plasma, 11 = Needler</desc>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x14</offset>
+<name>Flags</name>
+   <bitmask>
+    <bit>27</bit>
+    <name>Explosion</name>
+   </bitmask>
+   <bitmask>
+    <bit>31</bit>
+    <name>Headshot</name>
+   </bitmask>
+</value>
+
+ <value>
+<type>float</type>
+<offset>0x0</offset>
+<name>0x0 Float</name>
+<desc>Unknown float</desc>
+</value>
+
+ <value>
+<type>float</type>
+<offset>0x18</offset>
+<name>Minimum Radius</name>
+<desc>Minimum radius around the origin that the effect applys</desc>
+</value>
+
+ <value>
+<type>float</type>
+<offset>0x1c</offset>
+<name>Max radius</name>
+<desc>Maximum radius around the origin that the effect applys</desc>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x20</offset>
+<name>Damage</name>
+<desc>Damage the effect makes</desc>
+</value>
+
+ <value>
+<type>float</type>
+<offset>0x24</offset>
+<name>Damage 1</name>
+<desc>?</desc>
+</value>
+
+ <value>
+<type>float</type>
+<offset>0x40</offset>
+<name>Force</name>
+<desc>Force that the effect applies to other objects</desc>
+</value>
+ </tab>
+</plugin>

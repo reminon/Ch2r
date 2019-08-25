@@ -1,0 +1,203 @@
+<plugin>
+  <tag>weap</tag>
+  <tab>
+    <name>General</name>
+    <listSize>4</listSize>
+
+    <value>
+      <type>bitmask32</type>
+      <offset>0x12C</offset>
+      <name>Flags</name>
+      <bitmask>
+	<bit>10</bit>
+	<name>Dual Wieldable</name>
+      </bitmask>
+      <bitmask>
+	<bit>16</bit>
+	<name>Disable Binoculars</name>
+      </bitmask>
+      <bitmask>
+	<bit>20</bit>
+	<name>Disable Grenades</name>
+      </bitmask>
+      <bitmask>
+	<bit>23</bit>
+	<name>Disable Melee</name>
+      </bitmask>
+      <bitmask>
+	<bit>29</bit>
+ 	<name>Drop When Fired</name>
+      </bitmask>
+    </value>
+
+    <value>
+      <type>short</type>
+      <offset>0x1FE</offset>
+      <name>Zoom Levels</name>
+      <desc>Number of zoom levels</desc>
+    </value>
+    <value>
+      <type>float</type>
+      <offset>0x200</offset>
+      <name>Min. Zoom</name>
+      <desc>Minimum zoom level</desc>
+    </value>
+    <value>
+      <type>float</type>
+      <offset>0x204</offset>
+      <name>Max. Zoom</name>
+      <desc>Maximum zoom level</desc>
+    </value>
+    <value>
+      <type>float</type>
+      <offset>0x20C</offset>
+      <name>Aquire Target Dist.</name>
+      <desc>Distance for weapon to "lock on"</desc>
+    </value>
+    <value>
+      <type>float</type>
+      <offset>0x2d8</offset>
+      <name>Projectile Count</name>
+      <desc>Number of projectiles fired</desc>
+    </value>
+  </tab>
+
+  <tab>
+    <name>Clip</name>
+
+    <value>
+      <type>reflexive</type>
+      <offset>0x2C0</offset>
+      <name>Clip</name>
+      <size>104</size>
+      <listSize>10</listSize>
+      <indexBy></indexBy>
+
+        <item>
+	  <type>short</type>
+	  <offset>0x006</offset>
+	  <name>Starting Ammo</name>
+	  <desc>Starting Ammo count</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x008</offset>
+	  <name>Max. Ammo</name>
+	  <desc>Maximum amount of Ammo for this weapon</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x00A</offset>
+	  <name>Clip Size</name>
+	  <desc>Amount of Ammo you can store in each clip</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x00C</offset>
+	  <name>Max. Holding Ammo</name>
+	  <desc>Maximum amount of Ammo you can hold not in the clip</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x014</offset>
+	  <name>Shots Reloaded</name>
+	  <desc>Number of shots reloaded per reloading action</desc>
+	</item>
+    </value>
+  </tab>
+
+  <tab>
+    <name>Projectile</name>
+
+    <value>
+      <type>reflexive</type>
+      <offset>0x2D0</offset>
+      <name>Projectile</name>
+      <size>236</size>
+      <listSize>10</listSize>
+      <indexBy>__none__</indexBy>
+
+	<item>
+	  <type>bitmask32</type>
+	  <offset>0x0</offset>
+	  <name>Flags</name>
+	  <bitmask>
+	    <bit>19</bit>
+	    <name>Homing</name>
+	  </bitmask>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x90</offset>
+	  <name>Projectile Reference</name>
+	  <desc>Not sure...</desc>
+	</item>
+	<item>
+	  <type>float</type>
+	  <offset>0x4</offset>
+	  <name>Minimum ROF</name>
+	  <desc>Minimum Rate Of Fire</desc>
+	</item>
+	<item>
+	  <type>float</type>
+	  <offset>0x8</offset>
+	  <name>Maximum ROF</name>
+	  <desc>Maximum Rate Of Fire</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x1c</offset>
+	  <name>Minimum Burst</name>
+	  <desc>Minimum number of rounds fired when trigger is squeezed</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x1e</offset>
+	  <name>Maximum Burst</name>
+	  <desc>Maximum number of rounds fired when trigger is squeezed</desc>
+	</item>
+	<item>
+	  <type>float</type>
+	  <offset>0x50</offset>
+	  <name>Unknown Float3</name>
+	  <desc>Unknown</desc>
+	</item>
+	<item>
+	  <type>float</type>
+	  <offset>0x54</offset>
+	  <name>Unknown Float4</name>
+	  <desc>Unknown</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x1e</offset>
+	  <name>Unknown Short1</name>
+	  <desc>Unknown</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x2a</offset>
+	  <name>Unknown Short2</name>
+	  <desc>Unknown</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x2e</offset>
+	  <name>Unknown Short3</name>
+	  <desc>Unknown</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x34</offset>
+	  <name>Unknown Short4</name>
+	  <desc>Unknown</desc>
+	</item>
+	<item>
+	  <type>short</type>
+	  <offset>0x36</offset>
+	  <name>Unknown Short5</name>
+	  <desc>Unknown</desc>
+	</item>
+    </value>
+  </tab>
+</plugin>
